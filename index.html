@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Clone</title>
+    <title>Instagram</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-wrapper">
             <img src="images/logo.png" alt="Instagram" class="brand-img">
-            <input type="text" class="search-box" placeholder="search">
+            <input type="text" class="search-box" placeholder="Search">
             <div class="nav-items">
                 <img src="images/home.png" class="icon" alt="home">
                 <img src="images/messenger.png" class="icon" alt="messenger">
                 <img src="images/add.png" class="icon" alt="add">
                 <img src="images/explore.png" class="icon" alt="explore">
                 <img src="images/like.png" class="icon" alt="like">
-                <div class="user-profile"></div>
+                <img src="images/profile.jpg" class="icon user-profile" alt="profile">
             </div>
         </div>
     </nav>
@@ -27,16 +28,141 @@
     <section class="main">
         <div class="wrapper">
             <div class="left-col">
-                <!-- Stories -->
-                <div class="stories"></div>
-                <!-- Posts -->
-                <div class="posts"></div>
+                <div class="stories">
+                    <div class="story">
+                        <div class="story-ring">
+                            <img src="images/user1.jpg" class="story-img" alt="user">
+                        </div>
+                        <span class="story-username">username1</span>
+                    </div>
+                    <div class="story">
+                        <div class="story-ring">
+                            <img src="images/user2.jpg" class="story-img" alt="user">
+                        </div>
+                        <span class="story-username">username2</span>
+                    </div>
+                    <div class="story">
+                        <div class="story-ring">
+                            <img src="images/user3.jpg" class="story-img" alt="user">
+                        </div>
+                        <span class="story-username">username3</span>
+                    </div>
+                    <div class="story">
+                        <div class="story-ring">
+                            <img src="images/user4.jpg" class="story-img" alt="user">
+                        </div>
+                        <span class="story-username">username4</span>
+                    </div>
+                    <div class="story">
+                        <div class="story-ring">
+                            <img src="images/user5.jpg" class="story-img" alt="user">
+                        </div>
+                        <span class="story-username">username5</span>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="images/user2.jpg" class="post-profile-img" alt="user">
+                            <a href="#" class="post-username">username2</a>
+                            <div class="post-more">•••</div>
+                        </div>
+                        <img src="images/post1.jpg" class="post-image" alt="post">
+                        <div class="post-actions">
+                            <img src="images/like.png" class="post-action-btn" alt="like">
+                            <img src="images/comment.png" class="post-action-btn" alt="comment">
+                            <img src="images/share.png" class="post-action-btn" alt="share">
+                            <img src="images/save.png" class="post-action-btn" alt="save" style="margin-left: auto;">
+                        </div>
+                        <div class="post-likes">1,234 likes</div>
+                        <div class="post-caption"><strong>username2</strong> Beautiful sunset! 🌅</div>
+                        <div class="post-comments">View all 48 comments</div>
+                        <div class="post-time">2 HOURS AGO</div>
+                        <div class="post-comment-box">
+                            <input type="text" placeholder="Add a comment..." class="comment-input">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="images/user3.jpg" class="post-profile-img" alt="user">
+                            <a href="#" class="post-username">username3</a>
+                            <div class="post-more">•••</div>
+                        </div>
+                        <img src="images/post2.jpg" class="post-image" alt="post">
+                        <div class="post-actions">
+                            <img src="images/like.png" class="post-action-btn" alt="like">
+                            <img src="images/comment.png" class="post-action-btn" alt="comment">
+                            <img src="images/share.png" class="post-action-btn" alt="share">
+                            <img src="images/save.png" class="post-action-btn" alt="save" style="margin-left: auto;">
+                        </div>
+                        <div class="post-likes">856 likes</div>
+                        <div class="post-caption"><strong>username3</strong> Living my best life! 🎉</div>
+                        <div class="post-comments">View all 23 comments</div>
+                        <div class="post-time">5 HOURS AGO</div>
+                        <div class="post-comment-box">
+                            <input type="text" placeholder="Add a comment..." class="comment-input">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="right-col">
-                <!-- Profile card -->
-                <div class="profile-card"></div>
-                <!-- Suggestions -->
-                <div class="suggestions"></div>
+                <div class="profile-card">
+                    <img src="images/profile.jpg" class="profile-card-img" alt="profile">
+                    <div class="profile-card-info">
+                        <a href="#" class="profile-card-username">your_username</a>
+                        <div class="profile-card-name">Your Name</div>
+                    </div>
+                    <button class="switch-btn">Switch</button>
+                </div>
+
+                <div class="suggestions">
+                    <div class="suggestions-header">
+                        <span class="suggestions-title">Suggestions For You</span>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    
+                    <div class="suggestion">
+                        <img src="images/user6.jpg" class="suggestion-img" alt="user">
+                        <div class="suggestion-info">
+                            <a href="#" class="suggestion-username">suggested_user1</a>
+                            <div class="suggestion-status">Followed by user1 + 4 more</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <div class="suggestion">
+                        <img src="images/user7.jpg" class="suggestion-img" alt="user">
+                        <div class="suggestion-info">
+                            <a href="#" class="suggestion-username">suggested_user2</a>
+                            <div class="suggestion-status">Followed by user2 + 2 more</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <div class="suggestion">
+                        <img src="images/user8.jpg" class="suggestion-img" alt="user">
+                        <div class="suggestion-info">
+                            <a href="#" class="suggestion-username">suggested_user3</a>
+                            <div class="suggestion-status">New to Instagram</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="links">
+                        <a href="#">About</a> • <a href="#">Help</a> • <a href="#">Press</a> • <a href="#">API</a> • 
+                        <a href="#">Jobs</a> • <a href="#">Privacy</a> • <a href="#">Terms</a>
+                    </div>
+                    <div class="copyright">
+                        © 2024 INSTAGRAM FROM META
+                    </div>
+                </div>
             </div>
         </div>
     </section>
