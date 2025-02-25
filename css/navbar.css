@@ -1,44 +1,52 @@
- .navbar {
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: #fff;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid var(--instagram-border);
     display: flex;
     justify-content: center;
-    padding: 5px 0;
+    z-index: 100;
 }
 
 .nav-wrapper {
-    width: 70%;
-    max-width: 1000px;
+    width: 935px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .brand-img {
-    height: 30px;
+    height: 29px;
 }
 
 .search-box {
-    width: 200px;
-    height: 25px;
-    background: #fafafa;
-    border: 1px solid #dfdfdf;
-    border-radius: 2px;
-    padding: 0 10px;
+    width: 268px;
+    height: 36px;
+    background: #efefef;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 14px;
 }
 
 .nav-items {
     display: flex;
     align-items: center;
+    gap: 22px;
 }
 
 .icon {
+    width: 24px;
     height: 24px;
-    margin: 0 10px;
     cursor: pointer;
+}
+
+.user-profile {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-size: cover;
 }
