@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <img src="images/logo.png" alt="Instagram" class="brand-img">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <img src="images/home.png" class="icon" alt="home">
+                <img src="images/messenger.png" class="icon" alt="messenger">
+                <img src="images/add.png" class="icon" alt="add">
+                <img src="images/explore.png" class="icon" alt="explore">
+                <img src="images/like.png" class="icon" alt="like">
+                <div class="user-profile"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <!-- Stories -->
+                <div class="stories"></div>
+                <!-- Posts -->
+                <div class="posts"></div>
+            </div>
+            <div class="right-col">
+                <!-- Profile card -->
+                <div class="profile-card"></div>
+                <!-- Suggestions -->
+                <div class="suggestions"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+    <script src="js/stories.js"></script>
+    <script src="js/posts.js"></script>
+</body>
+</html>
